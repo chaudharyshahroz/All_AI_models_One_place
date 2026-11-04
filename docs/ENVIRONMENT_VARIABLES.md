@@ -8,7 +8,7 @@
 |---|---|---|---|
 | `NODE_ENV` | yes | `development` | `development` / `test` / `production` |
 | `NEXT_PUBLIC_APP_URL` | yes | `http://localhost:3000` | Public app URL (used for emails, OAuth callbacks) |
-| `NEXT_PUBLIC_APP_NAME` | no | `Reklu` | Public-facing app name |
+| `NEXT_PUBLIC_APP_NAME` | no | `All Ai Models ` | Public-facing app name |
 
 ## Database
 
@@ -18,7 +18,7 @@
 
 Production example:
 ```
-DATABASE_URL="postgresql://reklu:password@db.internal:5432/reklu?schema=public"
+DATABASE_URL="postgresql://all ai models :password@db.internal:5432/all ai models ?schema=public"
 ```
 
 ## Authentication
@@ -99,7 +99,7 @@ Direct provider integrations. Set at least one to enable chat.
 
 | Variable | Default | Description |
 |---|---|---|
-| `FEATURE_REKLU_AUTO` | `true` | Reklu Auto model selection |
+| `FEATURE_ALL AI MODELS _AUTO` | `true` | All Ai Models  Auto model selection |
 | `FEATURE_MODEL_COMPARISON` | `true` | Side-by-side model comparison |
 | `FEATURE_FILES` | `false` | File upload + RAG (Phase 6) |
 | `FEATURE_SKILLS` | `false` | Skill engine (Phase 4) |

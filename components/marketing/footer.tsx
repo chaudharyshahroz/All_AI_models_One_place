@@ -50,8 +50,8 @@ export function MarketingFooter() {
           </div>
         </div>
         <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t pt-6 text-xs text-muted-foreground sm:flex-row">
-          <p>© {new Date().getFullYear()} Reklu. All rights reserved.</p>
-          <p>reklu.app</p>
+          <p>© {new Date().getFullYear()} All Ai Models . All rights reserved.</p>
+          <p>all ai models .app</p>
         </div>
       </div>
     </footer>

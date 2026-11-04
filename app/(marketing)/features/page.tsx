@@ -41,7 +41,7 @@ const GROUPS = [
       },
       {
         icon: Cpu,
-        title: "Reklu Auto",
+        title: "All Ai Models  Auto",
         desc: "Routes each message on intent, required capabilities, and your quality/speed/cost preference — and always explains the pick.",
       },
       {
@@ -74,7 +74,7 @@ const GROUPS = [
       {
         icon: Wrench,
         title: "Iterate by conversation",
-        desc: "Say what to change instead of editing code. Reklu rewrites and re-renders in place.",
+        desc: "Say what to change instead of editing code. All Ai Models  rewrites and re-renders in place.",
       },
       {
         icon: FileText,
@@ -205,7 +205,7 @@ export default function FeaturesPage() {
             </p>
             <Button asChild size="xl" className="mt-8">
               <Link href="/sign-up">
-                Start using Reklu <ArrowRight />
+                Start using All Ai Models  <ArrowRight />
               </Link>
             </Button>
           </ScrollReveal>

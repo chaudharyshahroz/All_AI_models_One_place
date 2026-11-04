@@ -1,5 +1,5 @@
 # ============================================================================
-# Reklu — Production Dockerfile for Dokploy / Hostinger VPS
+# All Ai Models  — Production Dockerfile for Dokploy / Hostinger VPS
 # ----------------------------------------------------------------------------
 # Multi-stage build:
 #   1. deps     — install dependencies
@@ -57,19 +57,19 @@ ENV PORT=3000
 
 # Create non-root user
 RUN addgroup --system --gid 1001 nodejs && \
-    adduser --system --uid 1001 reklu
+    adduser --system --uid 1001 all ai models 
 
 # Copy built artifacts
 COPY --from=builder /app/public ./public
-COPY --from=builder --chown=reklu:nodejs /app/.next/standalone ./
-COPY --from=builder --chown=reklu:nodejs /app/.next/static ./.next/static
-COPY --from=builder --chown=reklu:nodejs /app/prisma ./prisma
+COPY --from=builder --chown=all ai models :nodejs /app/.next/standalone ./
+COPY --from=builder --chown=all ai models :nodejs /app/.next/static ./.next/static
+COPY --from=builder --chown=all ai models :nodejs /app/prisma ./prisma
 
 # Copy entrypoint
-COPY --chown=reklu:nodejs docker-entrypoint.sh /usr/local/bin/
+COPY --chown=all ai models :nodejs docker-entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
-USER reklu
+USER all ai models 
 
 EXPOSE 3000
 

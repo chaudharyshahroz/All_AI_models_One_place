@@ -35,7 +35,7 @@ export function AppPreview() {
             <span className="size-2.5 rounded-full bg-muted-foreground/25" />
           </div>
           <div className="mx-auto rounded-md bg-muted px-3 py-1 font-mono text-[11px] text-muted-foreground">
-            reklu.app/app/chat
+            all ai models .app/app/chat
           </div>
         </div>
 
@@ -108,7 +108,7 @@ export function AppPreview() {
                 <div className="min-w-0 flex-1">
                   <div className="mb-2 flex flex-wrap items-center gap-1.5 text-[11px]">
                     <span className="rounded-full bg-primary/12 px-2 py-0.5 font-medium text-primary">
-                      Reklu Auto
+                      All Ai Models  Auto
                     </span>
                     <span className="text-muted-foreground">
                       picked Claude Sonnet 4.5 — strongest at long-form strategy
@@ -143,7 +143,7 @@ export function AppPreview() {
             {/* Composer */}
             <div className="border-t border-border/70 p-4">
               <div className="elev-card flex items-center gap-3 rounded-xl border border-border/70 bg-background px-4 py-3">
-                <span className="flex-1 text-[13px] text-muted-foreground">Message Reklu…</span>
+                <span className="flex-1 text-[13px] text-muted-foreground">Message All Ai Models …</span>
                 <span className="inline-flex items-center gap-1.5 rounded-lg border border-border/70 px-2 py-1 text-[11px] font-medium">
                   <Sparkles className="size-3 text-primary" />
                   Auto

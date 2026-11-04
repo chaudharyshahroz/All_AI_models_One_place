@@ -50,7 +50,7 @@ const SECONDARY = [
 function togglePanel() {
   const collapsed = document.documentElement.classList.toggle("panel-collapsed");
   try {
-    localStorage.setItem("reklu-panel-collapsed", collapsed ? "1" : "0");
+    localStorage.setItem("all ai models -panel-collapsed", collapsed ? "1" : "0");
   } catch {}
 }
 

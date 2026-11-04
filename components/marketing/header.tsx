@@ -17,7 +17,7 @@ export function MarketingHeader({ nav = true }: { nav?: boolean }) {
       <header className="elev-float mx-auto flex h-16 max-w-5xl items-center justify-between rounded-2xl border border-border/60 bg-card/85 pl-5 pr-2.5 backdrop-blur-xl">
         <Link href="/" className="flex items-center gap-2.5">
           <Logo />
-          <span className="font-display text-[17px] font-semibold tracking-tight">Reklu</span>
+          <span className="font-display text-[17px] font-semibold tracking-tight">All Ai Models </span>
         </Link>
 
         {nav && (

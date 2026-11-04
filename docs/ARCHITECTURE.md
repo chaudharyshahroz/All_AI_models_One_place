@@ -1,13 +1,13 @@
-# Reklu Architecture
+# All Ai Models  Architecture
 
 > Internal architecture reference. Updated as the build progresses.
 
 ## Top-level
 
-Reklu is a single Next.js 15 + React 19 app today. The folder structure is **monorepo-ready** so the future split into `apps/web`, `apps/api`, `apps/worker`, and `packages/*` is mechanical, not architectural.
+All Ai Models  is a single Next.js 15 + React 19 app today. The folder structure is **monorepo-ready** so the future split into `apps/web`, `apps/api`, `apps/worker`, and `packages/*` is mechanical, not architectural.
 
 ```
-reklu/
+all ai models /
 ├── app/             # Next.js App Router
 ├── components/      # UI components
 ├── lib/             # Domain code (ai/, auth/, db.ts, env.ts, ...)
@@ -79,12 +79,12 @@ Adding a new provider (Phase 4+): xAI Grok, DeepSeek, Mistral, Cohere, Moonshot 
 
 - `isEnabledForUsers` — show/hide in selectors
 - `status` — active / deprecated / disabled
-- `qualityScore`, `speedScore`, `costScore` — signals for Reklu Auto
+- `qualityScore`, `speedScore`, `costScore` — signals for All Ai Models  Auto
 - `recommendedFor` — JSON array of intent tags
 
 Phase 4 plan: implement `sync` job per provider that calls `listModels()` on a schedule, creates `ModelDefinition` rows for new models in `pending` status, and alerts admins. Auto is **off by default** — new models must be reviewed and enabled before they're shown to users.
 
-## Reklu Auto
+## All Ai Models  Auto
 
 `lib/ai/auto.ts`:
 
@@ -151,4 +151,4 @@ Phase 10 plan: OpenTelemetry traces + Sentry error tracking + a `/admin/health` 
 - Rate limiting and CSP — Phase 10 hardening
 - Prompt-injection awareness documented; future work is in the prompt compiler (Phase 4)
 
-See [`docs/REKLU_REBUILD_AUDIT.md`](./REKLU_REBUILD_AUDIT.md) for the rebuild audit.
+See [`docs/ALL AI MODELS _REBUILD_AUDIT.md`](./ALL AI MODELS _REBUILD_AUDIT.md) for the rebuild audit.

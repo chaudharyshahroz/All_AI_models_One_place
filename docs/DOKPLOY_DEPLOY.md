@@ -5,7 +5,7 @@ Use these exact settings in the Dokploy UI when creating the application. The de
 ## Source
 
 - **Provider**: GitHub
-- **Repository**: `chaudharyshahroz/Reklu_-AIl_-Ai_-Model_private`
+- **Repository**: `chaudharyshahroz/All Ai Models _-AIl_-Ai_-Model_private`
 - **Branch**: `main`
 - **Trigger type**: `On Push`
 
@@ -25,14 +25,14 @@ Use these exact settings in the Dokploy UI when creating the application. The de
 
 Add **two** domains in the Domains tab:
 
-1. `reklu.app` — public marketing + user app
+1. `all ai models .app` — public marketing + user app
    - HTTPS: ON
    - HSTS: ON
-2. `admin.reklu.app` — admin panel only
+2. `admin.all ai models .app` — admin panel only
    - HTTPS: ON
    - HSTS: ON
 
-The app's `middleware.ts` enforces that `admin.reklu.app` only serves `/admin/*`, `/sign-in`, `/api/auth/*`, `/api/health`, and static assets. Everything else on the admin subdomain 308-redirects to `/admin`.
+The app's `middleware.ts` enforces that `admin.all ai models .app` only serves `/admin/*`, `/sign-in`, `/api/auth/*`, `/api/health`, and static assets. Everything else on the admin subdomain 308-redirects to `/admin`.
 
 ## Environment Variables
 
@@ -51,10 +51,10 @@ ENCRYPTION_KEY=<random-32-byte-base64>
 AUTH_TRUST_HOST=true
 
 # Database — use the Dokploy internal network
-DATABASE_URL=postgresql://reklu:<db-password>@db:5432/reklu
+DATABASE_URL=postgresql://all ai models :<db-password>@db:5432/all ai models 
 
 # Public URL (used in emails, OAuth callbacks, share links)
-NEXT_PUBLIC_APP_URL=https://reklu.app
+NEXT_PUBLIC_APP_URL=https://all ai models .app
 ```
 
 Optional (admin can also add these via the dashboard later):
@@ -92,11 +92,11 @@ After the first successful deploy:
 ```bash
 # SSH into the VPS, then exec into the postgres container
 docker exec -it $(docker ps | grep postgres | awk '{print $1}') \
-  psql -U reklu -d reklu \
+  psql -U all ai models  -d all ai models  \
   -c "UPDATE \"User\" SET \"isAdmin\" = true WHERE email = 'your-email@example.com';"
 ```
 
-Then visit `https://admin.reklu.app`, sign in, and add your AI provider keys at **API Keys**.
+Then visit `https://admin.all ai models .app`, sign in, and add your AI provider keys at **API Keys**.
 
 ## Why does the entrypoint run `prisma db push`?
 
@@ -132,4 +132,4 @@ Look at the last 100 lines of the app logs. The most common cause is the Prisma 
 
 ### "prisma db push" fails: "relation does not exist"
 
-Your DATABASE_URL points to the wrong database, or the `reklu` user doesn't have permission. Check by exec'ing into the `db` container and running `psql -U reklu -d reklu -c "\dt"`.
+Your DATABASE_URL points to the wrong database, or the `all ai models ` user doesn't have permission. Check by exec'ing into the `db` container and running `psql -U all ai models  -d all ai models  -c "\dt"`.

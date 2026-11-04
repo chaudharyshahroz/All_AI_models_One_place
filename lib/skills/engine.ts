@@ -12,7 +12,7 @@ import { unifiedStreamEventsToText } from "@/lib/ai/stream-util";
  * Pipeline:
  *   1. Load skill + current version
  *   2. Validate the input against the input schema (best-effort JSON Schema)
- *   3. Resolve the model (from allowedModels, or Reklu Auto)
+ *   3. Resolve the model (from allowedModels, or All Ai Models  Auto)
  *   4. Resolve credentials (system keys)
  *   5. Build the prompt (system prompt + user input + skill instructions)
  *   6. Stream the response

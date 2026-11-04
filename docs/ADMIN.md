@@ -5,7 +5,7 @@
 The admin area is gated by `User.isAdmin` — only admins can access it. To make yourself an admin:
 
 ```bash
-docker exec -it reklu-db psql -U reklu -d reklu \
+docker exec -it all ai models -db psql -U all ai models  -d all ai models  \
   -c "UPDATE \"User\" SET \"isAdmin\" = true WHERE email = 'you@example.com';"
 ```
 

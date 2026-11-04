@@ -62,7 +62,7 @@ export default async function ConnectorsPage() {
         <div>
           <h1 className="display-lg text-2xl">Connectors</h1>
           <p className="text-sm text-muted-foreground">
-            Connect your apps to Reklu. Once connected, you can mention files and data from your
+            Connect your apps to All Ai Models . Once connected, you can mention files and data from your
             tools directly in chat.
           </p>
         </div>
@@ -157,8 +157,8 @@ export default async function ConnectorsPage() {
           </CardHeader>
           <CardContent className="space-y-2 text-sm text-muted-foreground">
             <p>1. Click <strong>Connect</strong> on a connector and sign in with the provider.</p>
-            <p>2. Reklu syncs your files, emails, or channels (read-only by default).</p>
-            <p>3. In chat, type <code className="rounded bg-muted px-1 font-mono text-xs">@drive filename</code> to mention a file. Reklu reads the minimum needed to answer your question.</p>
+            <p>2. All Ai Models  syncs your files, emails, or channels (read-only by default).</p>
+            <p>3. In chat, type <code className="rounded bg-muted px-1 font-mono text-xs">@drive filename</code> to mention a file. All Ai Models  reads the minimum needed to answer your question.</p>
             <p>4. Write actions (sending emails, posting messages) require your explicit approval each time.</p>
           </CardContent>
         </Card>

@@ -10,7 +10,7 @@
 
 ```bash
 # 1. Clone or enter the project directory
-cd "/path/to/Reklu Ai model Chat"
+cd "/path/to/All Ai Models  Ai model Chat"
 
 # 2. Install dependencies
 pnpm install
@@ -38,7 +38,7 @@ Visit [http://localhost:3000](http://localhost:3000).
 
 The seed script provisions:
 
-- **Email:** `demo@reklu.app`
+- **Email:** `demo@all ai models .app`
 - **Password:** `demopassword`
 
 Plus a personal workspace, a sample conversation, and the full provider catalog (OpenAI, Anthropic, Google).
@@ -130,6 +130,6 @@ Next.js will pick the next free port (3001, 3002, ...) and print it to the termi
 ## Tips
 
 - The chat workspace is at `/app/chat`. After signing in you'll land there.
-- Use the **Reklu Auto** model selector to let the system pick the best model for your request.
+- Use the **All Ai Models  Auto** model selector to let the system pick the best model for your request.
 - The usage page (`/app/usage`) shows real-time token + cost tracking.
 - Provider keys are env-var only for Phase 1-3. The BYOK UI ships in Phase 8 (along with the Settings → Providers page).

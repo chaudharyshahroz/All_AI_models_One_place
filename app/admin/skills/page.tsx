@@ -60,7 +60,7 @@ export default async function AdminSkillsPage() {
           <ul className="space-y-2 text-sm">
             <li className="flex items-start gap-2">
               <ArrowRight className="mt-0.5 size-4 text-primary" />
-              <span>Reklu Auto picks the best model for the user's prompt (intent + capability + preference).</span>
+              <span>All Ai Models  Auto picks the best model for the user's prompt (intent + capability + preference).</span>
             </li>
             <li className="flex items-start gap-2">
               <ArrowRight className="mt-0.5 size-4 text-primary" />

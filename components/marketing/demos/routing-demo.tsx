@@ -9,7 +9,7 @@ const CANDIDATES = [
 ];
 
 /**
- * Reklu Auto: one prompt fans out to candidate models, one is selected, and
+ * All Ai Models  Auto: one prompt fans out to candidate models, one is selected, and
  * the reason is shown. Pure CSS/SVG — no runtime cost, no rAF dependency.
  */
 export function RoutingDemo() {

@@ -375,7 +375,7 @@ export function ChatWorkspace({
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={onKey}
-              placeholder="Message Reklu…"
+              placeholder="Message All Ai Models …"
               rows={1}
               disabled={isStreaming}
               className="min-h-[44px] resize-none border-0 bg-transparent px-4 py-3 focus-visible:ring-0 focus-visible:ring-offset-0"
@@ -445,7 +445,7 @@ function ModelSelector({
   models: ModelOption[];
 }) {
   const current = models.find((m) => m.modelId === modelId);
-  const label = auto ? "Reklu Auto" : current?.displayName ?? "Select model";
+  const label = auto ? "All Ai Models  Auto" : current?.displayName ?? "Select model";
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -464,7 +464,7 @@ function ModelSelector({
         >
           <Sparkles className="text-primary" />
           <div>
-            <div className="font-medium">Reklu Auto</div>
+            <div className="font-medium">All Ai Models  Auto</div>
             <div className="text-xs text-muted-foreground">
               Pick the best model for each request
             </div>
@@ -650,7 +650,7 @@ function EmptyState({ onPick }: { onPick: (text: string) => void }) {
         </div>
         <h2 className="font-display text-2xl font-semibold tracking-tight">How can I help today?</h2>
         <p className="mt-1 text-sm text-muted-foreground">
-          Try a prompt, or let Reklu Auto pick the best model for you.
+          Try a prompt, or let All Ai Models  Auto pick the best model for you.
         </p>
       </div>
       <div className="grid gap-2 sm:grid-cols-2">
@@ -676,7 +676,7 @@ function NoProvidersEmpty() {
       </div>
       <h2 className="font-display text-xl font-semibold">Add a provider to start chatting</h2>
       <p className="mt-2 text-sm text-muted-foreground">
-        Reklu uses your key directly — no proxy, no markup. The key is encrypted at rest and never
+        All Ai Models  uses your key directly — no proxy, no markup. The key is encrypted at rest and never
         sent to your browser.
       </p>
       <Button asChild className="mt-6" size="lg">

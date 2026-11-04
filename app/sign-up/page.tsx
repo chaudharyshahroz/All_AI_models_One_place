@@ -81,7 +81,7 @@ export default async function SignUpPage({
             href="/"
             className="mt-8 inline-block text-sm text-muted-foreground hover:text-foreground"
           >
-            ← Back to reklu.app
+            ← Back to all ai models .app
           </Link>
           <h1 className="mt-4 display-lg text-3xl">
             Create your account

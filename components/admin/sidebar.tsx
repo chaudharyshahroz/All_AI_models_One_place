@@ -30,7 +30,7 @@ const NAV = [
 function toggleAdminSidebar() {
   const collapsed = document.documentElement.classList.toggle("admin-sidebar-collapsed");
   try {
-    localStorage.setItem("reklu-admin-sidebar-collapsed", collapsed ? "1" : "0");
+    localStorage.setItem("all ai models -admin-sidebar-collapsed", collapsed ? "1" : "0");
   } catch {}
 }
 
@@ -43,7 +43,7 @@ export function AdminSidebar({ adminName, adminEmail }: { adminName: string; adm
           <ShieldIcon />
         </div>
         <div className="nav-label min-w-0 flex-1">
-          <div className="truncate text-sm font-semibold">Reklu Admin</div>
+          <div className="truncate text-sm font-semibold">All Ai Models  Admin</div>
           <div className="text-[10px] uppercase tracking-wider text-muted-foreground">v0.2</div>
         </div>
         <button

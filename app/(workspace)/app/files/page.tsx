@@ -70,7 +70,7 @@ export default async function FilesPage() {
         <div>
           <h1 className="display-lg text-2xl">Files</h1>
           <p className="text-sm text-muted-foreground">
-            Upload PDFs, docs, code, and text. Reklu extracts the content, embeds it, and
+            Upload PDFs, docs, code, and text. All Ai Models  extracts the content, embeds it, and
             surfaces it in chat with citations.
           </p>
         </div>

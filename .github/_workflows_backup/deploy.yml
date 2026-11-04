@@ -30,8 +30,8 @@ jobs:
           file: ./Dockerfile
           push: ${{ env.DOCKER_REGISTRY != '' }}
           tags: |
-            ${{ env.DOCKER_REGISTRY }}/reklu:${{ github.sha }}
-            ${{ env.DOCKER_REGISTRY }}/reklu:latest
+            ${{ env.DOCKER_REGISTRY }}/all ai models :${{ github.sha }}
+            ${{ env.DOCKER_REGISTRY }}/all ai models :latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
 

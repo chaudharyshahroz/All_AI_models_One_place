@@ -17,7 +17,7 @@ test.describe("smoke", () => {
   test("sign-in page renders the demo card", async ({ page }) => {
     await page.goto("/sign-in");
     await expect(page.getByText("Welcome back")).toBeVisible();
-    await expect(page.getByText("demo@reklu.app")).toBeVisible();
+    await expect(page.getByText("demo@all ai models .app")).toBeVisible();
   });
 
   test("pricing page shows three tiers", async ({ page }) => {

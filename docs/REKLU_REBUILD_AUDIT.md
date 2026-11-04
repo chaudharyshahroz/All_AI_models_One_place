@@ -1,21 +1,21 @@
-# Reklu Rebuild Audit
+# All Ai Models  Rebuild Audit
 
 **Date:** 2026-07-26
-**Project:** Reklu v0.2 — "Every leading AI model. One connected workspace."
+**Project:** All Ai Models  v0.2 — "Every leading AI model. One connected workspace."
 **Scope of this session:** Phase 1-3 (foundation + working multi-model chat)
 
 ---
 
 ## 1. Starting state
 
-The new build lives in a previously empty folder (`/Users/chaudharyshahroz/Documents/Reklu Ai model Chat`). Three other Reklu iterations exist on this machine:
+The new build lives in a previously empty folder (`/Users/chaudharyshahroz/Documents/All Ai Models  Ai model Chat`). Three other All Ai Models  iterations exist on this machine:
 
 | Folder | State | Verdict |
 |---|---|---|
-| `Reklu AI Business Workspace` | Old "Business OS" Next.js 14 app, prisma + auth, ~30 source files | **Archived separately, NOT carried forward** |
-| `Reklu AI Compny Empoly` | Variant of the above | Not touched |
-| `Reklu AI SAAS ALL MODLES` | Largest existing build, Next.js 14 + Prisma + BullMQ workers | **Archived separately, NOT carried forward** |
-| `Reklu Ai model Chat` | Empty at session start | **New home for v0.2** |
+| `All Ai Models  AI Business Workspace` | Old "Business OS" Next.js 14 app, prisma + auth, ~30 source files | **Archived separately, NOT carried forward** |
+| `All Ai Models  AI Compny Empoly` | Variant of the above | Not touched |
+| `All Ai Models  AI SAAS ALL MODLES` | Largest existing build, Next.js 14 + Prisma + BullMQ workers | **Archived separately, NOT carried forward** |
+| `All Ai Models  Ai model Chat` | Empty at session start | **New home for v0.2** |
 
 **Decision (per user):** Build fresh in the empty folder. The old "Business OS" is the product being explicitly retired. No code, no users, no billing history carried over. This is intentional.
 
@@ -31,7 +31,7 @@ Nothing from the old codebase is reused. The new build:
 
 ## 3. What was removed
 
-The old Reklu product's "Business OS" framing is gone. Specifically:
+The old All Ai Models  product's "Business OS" framing is gone. Specifically:
 
 - No "Business Planner", "Founder Mode", "Strategic Command Center" pages.
 - No "AI Model Hub" as a product module.
@@ -71,7 +71,7 @@ If no provider key is set, the chat UI shows a clear "no providers configured" s
 
 ## 7. Future migration path
 
-When the new Reklu is live, point the old DNS records at it. Old user accounts can be migrated later via a one-time import script (not part of Phase 1-3).
+When the new All Ai Models  is live, point the old DNS records at it. Old user accounts can be migrated later via a one-time import script (not part of Phase 1-3).
 
 ---
 
@@ -87,7 +87,7 @@ When the new Reklu is live, point the old DNS records at it. Old user accounts c
 - Model registry with admin-controlled enable/disable
 - Streaming chat endpoint (SSE)
 - Conversation persistence, sidebar, model selector
-- Reklu Auto (intent + capability-based model selection, with transparent "why this model" explanation)
+- All Ai Models  Auto (intent + capability-based model selection, with transparent "why this model" explanation)
 - Usage tracking per message + per conversation
 - Marketing site: home, /features, /pricing, /models, /sign-in, /sign-up
 - Settings stub: /app/settings/profile

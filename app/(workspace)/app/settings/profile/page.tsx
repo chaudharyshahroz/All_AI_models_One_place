@@ -43,7 +43,7 @@ export default async function ProfilePage() {
         <Card>
           <CardHeader>
             <CardTitle className="text-base">Account</CardTitle>
-            <CardDescription>How you appear in Reklu.</CardDescription>
+            <CardDescription>How you appear in All Ai Models .</CardDescription>
           </CardHeader>
           <CardContent>
             <form action={updateProfile} className="space-y-5">
@@ -88,7 +88,7 @@ export default async function ProfilePage() {
                   defaultValue={user.preferredModelId ?? ""}
                 />
                 <p className="text-xs text-muted-foreground">
-                  Leave blank to use Reklu Auto. Use the exact model ID from your provider.
+                  Leave blank to use All Ai Models  Auto. Use the exact model ID from your provider.
                 </p>
               </div>
               <div className="flex items-center gap-2">
@@ -100,7 +100,7 @@ export default async function ProfilePage() {
                   className="size-4 rounded border-input"
                 />
                 <Label htmlFor="preferredAuto" className="cursor-pointer">
-                  Let Reklu Auto pick the best model
+                  Let All Ai Models  Auto pick the best model
                 </Label>
               </div>
               <Button type="submit">Save preferences</Button>

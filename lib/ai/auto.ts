@@ -1,7 +1,7 @@
 import type { ModelDescriptor, UnifiedGenerationRequest } from "./types";
 
 /**
- * Reklu Auto — selects an appropriate model for a given request based on:
+ * All Ai Models  Auto — selects an appropriate model for a given request based on:
  *   - intent (code, chat, reasoning, vision, ...)
  *   - required capabilities (tools, vision, large context, ...)
  *   - user preference (quality vs. speed vs. cost)

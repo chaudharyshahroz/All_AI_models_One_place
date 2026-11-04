@@ -4,11 +4,11 @@
 
 All Ai Model is a chat-first AI workspace. Chat with GPT, Claude, Gemini, and other leading models. Connect your apps and data, use specialized AI skills, and create documents, presentations, images, spreadsheets, and code — all from one intelligent chat interface.
 
-This repository contains the **Phase 1-3 build** of Reklu:
+This repository contains the **Phase 1-3 build** of All Ai Models :
 
 - ✅ Phase 1: Foundation (monorepo-ready folder structure, audit, design system)
 - ✅ Phase 2: Platform (Prisma, auth, organizations, encryption, observability hooks)
-- ✅ Phase 3: Multi-model chat (direct provider integrations, streaming, Reklu Auto, usage tracking)
+- ✅ Phase 3: Multi-model chat (direct provider integrations, streaming, All Ai Models  Auto, usage tracking)
 - ⏳ Phases 4-10: Skills, connectors, MCP, artifacts, agents, billing, admin, marketing follow-ups, tests
 
 ## Quick start
@@ -47,7 +47,7 @@ pnpm prisma:push
 pnpm prisma:seed
 ```
 
-The seed creates a demo user (`demo@reklu.app` / `demopassword`), the canonical provider catalog, and a sample conversation.
+The seed creates a demo user (`demo@all ai models .app` / `demopassword`), the canonical provider catalog, and a sample conversation.
 
 ### 4. Run
 
@@ -60,7 +60,7 @@ Visit [http://localhost:3000](http://localhost:3000).
 ## Architecture
 
 ```
-reklu/
+all ai models /
 ├── app/                          # Next.js App Router
 │   ├── (marketing)/              # Public marketing site
 │   │   ├── page.tsx              #   (/)
@@ -92,7 +92,7 @@ reklu/
 │   │   ├── google.ts             #   Google Gemini adapter (direct SDK)
 │   │   ├── pricing.ts            #   Default pricing table
 │   │   ├── registry.ts           #   Provider registry / credential resolver
-│   │   ├── auto.ts               #   Reklu Auto model selection
+│   │   ├── auto.ts               #   All Ai Models  Auto model selection
 │   │   └── orchestrator.ts       #   Chat orchestration + persistence
 │   ├── auth/                     # NextAuth v5 config + helpers
 │   ├── db.ts                     # Prisma client singleton
@@ -162,9 +162,9 @@ Adding a new provider is a 4-step process:
 4. Add pricing in `lib/ai/pricing.ts`
 5. Run `pnpm prisma:push` to add the provider row
 
-## Reklu Auto
+## All Ai Models  Auto
 
-Reklu Auto analyzes the request, the conversation history, and your preference (quality / balanced / speed / cost), then picks the best model from the configured catalog. The user always sees a short, transparent explanation — e.g.:
+All Ai Models  Auto analyzes the request, the conversation history, and your preference (quality / balanced / speed / cost), then picks the best model from the configured catalog. The user always sees a short, transparent explanation — e.g.:
 
 > Selected Claude Sonnet 4.5 for strong coding performance, quality preference.
 
@@ -242,4 +242,4 @@ Each phase builds on the foundation in this repo. See [docs/ARCHITECTURE.md](./d
 
 ## License
 
-Proprietary. © Reklu.
+Proprietary. © All Ai Models .

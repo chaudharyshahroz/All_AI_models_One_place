@@ -166,7 +166,7 @@ export default async function SkillDetailPage({
         <Card>
           <CardHeader>
             <CardTitle className="text-base">Run this skill</CardTitle>
-            <CardDescription>Enter your input and Reklu will run the workflow.</CardDescription>
+            <CardDescription>Enter your input and All Ai Models  will run the workflow.</CardDescription>
           </CardHeader>
           <CardContent>
             <form action={runFromForm} className="space-y-3">

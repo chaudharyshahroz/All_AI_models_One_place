@@ -70,7 +70,7 @@ const serverSchema = z.object({
 
 const clientSchema = z.object({
   NEXT_PUBLIC_APP_URL: z.string().url().default("http://localhost:3000"),
-  NEXT_PUBLIC_APP_NAME: z.string().default("Reklu"),
+  NEXT_PUBLIC_APP_NAME: z.string().default("All Ai Models "),
   NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: z.string().optional(),
 });
 
@@ -135,7 +135,7 @@ export const publicEnv = parseClientEnv();
 /**
  * Get a provider API key from the environment. Returns undefined if not set.
  * Used by the provider registry to determine which providers are available
- * when using Reklu-managed credentials.
+ * when using All Ai Models -managed credentials.
  */
 export function getProviderEnvKey(providerId: string): string | undefined {
   const map: Record<string, string | undefined> = {
@@ -157,7 +157,7 @@ export function getProviderEnvKey(providerId: string): string | undefined {
 }
 
 /**
- * Returns the list of provider IDs that have a Reklu-managed env key set.
+ * Returns the list of provider IDs that have a All Ai Models -managed env key set.
  * Used to filter the model registry for the current deployment.
  */
 export function listConfiguredProviders(): string[] {

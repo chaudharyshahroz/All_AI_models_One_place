@@ -32,7 +32,7 @@ export interface UnifiedMessagePart {
   text?: string;
   // For images, base64 data URL or https URL
   imageUrl?: string;
-  // For files, an internal Reklu file ID (the orchestrator fetches the bytes)
+  // For files, an internal All Ai Models  file ID (the orchestrator fetches the bytes)
   fileId?: string;
   mimeType?: string;
 }

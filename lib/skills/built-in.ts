@@ -1,5 +1,5 @@
 /**
- * Built-in skills shipped with Reklu.
+ * Built-in skills shipped with All Ai Models .
  * Each skill is a real, versioned AI workflow — not a prompt.
  *
  * Add new skills by appending to the BUILT_IN array.
@@ -31,7 +31,7 @@ const DEEP_RESEARCH: BuiltInSkill = {
   category: "research",
   icon: "🔬",
   intentRules: ["research"],
-  systemPrompt: `You are Reklu Deep Research, an expert research analyst.
+  systemPrompt: `You are All Ai Models  Deep Research, an expert research analyst.
 
 When the user asks a research question, produce a structured research report with:
 1. **Summary** — 2-3 sentence answer to the question

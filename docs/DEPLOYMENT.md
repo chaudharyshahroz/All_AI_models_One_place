@@ -1,6 +1,6 @@
-# Deploying Reklu to Hostinger VPS with Dokploy
+# Deploying All Ai Models  to Hostinger VPS with Dokploy
 
-This guide walks you through deploying Reklu to a Hostinger VPS using Dokploy — the easiest way to ship a production Next.js app with a managed Postgres database.
+This guide walks you through deploying All Ai Models  to a Hostinger VPS using Dokploy — the easiest way to ship a production Next.js app with a managed Postgres database.
 
 ## What you'll need
 
@@ -18,18 +18,18 @@ SSH into your VPS and run:
 curl -sSL https://dokploy.com/install.sh | sh
 ```
 
-Once Dokploy is up (default port 3000 on the VPS — **different from your app's port**), open `http://<vps-ip>:3000`, finish the setup wizard, and create a project called `reklu`.
+Once Dokploy is up (default port 3000 on the VPS — **different from your app's port**), open `http://<vps-ip>:3000`, finish the setup wizard, and create a project called `all ai models `.
 
 ## Push your code to GitHub
 
-1. Create a new GitHub repo (e.g. `reklu`).
+1. Create a new GitHub repo (e.g. `all ai models `).
 2. Push this codebase:
    ```bash
    git init
    git add .
    git commit -m "Initial commit"
    git branch -M main
-   git remote add origin git@github.com:<you>/reklu.git
+   git remote add origin git@github.com:<you>/all ai models .git
    git push -u origin main
    ```
 
@@ -38,8 +38,8 @@ Once Dokploy is up (default port 3000 on the VPS — **different from your app's
 In the Dokploy UI:
 
 1. Go to **Settings → Git Providers** and link your GitHub account.
-2. Go to your `reklu` project → **Create Service → Application**.
-3. Source: **GitHub**, select the `reklu` repo, branch `main`.
+2. Go to your `all ai models ` project → **Create Service → Application**.
+3. Source: **GitHub**, select the `all ai models ` repo, branch `main`.
 4. Build:
    - **Build method**: Docker
    - **Dockerfile path**: `./Dockerfile`
@@ -56,10 +56,10 @@ In the application's **Environment** tab, set these (use Dokploy's "secret" togg
 NODE_ENV=production
 AUTH_SECRET=<openssl rand -base64 32>
 ENCRYPTION_KEY=<openssl rand -base64 32>
-DATABASE_URL=postgresql://reklu:CHANGE_ME@db:5432/reklu
+DATABASE_URL=postgresql://all ai models :CHANGE_ME@db:5432/all ai models 
 
 # Public URL
-NEXT_PUBLIC_APP_URL=https://reklu.yourdomain.com
+NEXT_PUBLIC_APP_URL=https://all ai models .yourdomain.com
 
 # AI providers (admin can also add these via the dashboard after deploy)
 OPENAI_API_KEY=sk-...
@@ -79,10 +79,10 @@ In the same Dokploy project, add a Postgres service:
 
 1. **Create Service → Database → PostgreSQL 16**.
 2. Service name: `db`.
-3. Database name: `reklu`. User: `reklu`. Password: generate a strong one.
-4. Dokploy exposes the connection string as `postgresql://reklu:<password>@db:5432/reklu` on the internal network.
+3. Database name: `all ai models `. User: `all ai models `. Password: generate a strong one.
+4. Dokploy exposes the connection string as `postgresql://all ai models :<password>@db:5432/all ai models ` on the internal network.
 
-The Reklu Docker image's entrypoint runs `prisma db push` on every start, so the schema is always in sync. No separate migration step is required for Phase 1-3.
+The All Ai Models  Docker image's entrypoint runs `prisma db push` on every start, so the schema is always in sync. No separate migration step is required for Phase 1-3.
 
 ## Auto-deploy on push (CI/CD)
 
@@ -98,7 +98,7 @@ This repo includes `.github/workflows/deploy.yml` that:
 
 Dokploy handles Traefik for you. To add HTTPS:
 
-1. In the application's **Domains** tab, add `reklu.yourdomain.com`.
+1. In the application's **Domains** tab, add `all ai models .yourdomain.com`.
 2. Enable **Let's Encrypt** (one click).
 3. Dokploy provisions a cert and auto-renews it.
 
@@ -106,16 +106,16 @@ Dokploy handles Traefik for you. To add HTTPS:
 
 After the first successful deploy:
 
-1. Visit `https://reklu.yourdomain.com/sign-up` and create your account.
+1. Visit `https://all ai models .yourdomain.com/sign-up` and create your account.
 2. Promote yourself to admin:
    ```bash
    # SSH into the VPS
-   docker exec -it reklu-db psql -U reklu -d reklu \
+   docker exec -it all ai models -db psql -U all ai models  -d all ai models  \
      -c "UPDATE \"User\" SET \"isAdmin\" = true WHERE email = 'you@example.com';"
    ```
    (The `User` table is double-quoted because Postgres lowercases unquoted identifiers.)
-3. Sign in to the admin dashboard at `https://reklu.yourdomain.com/admin` and add your AI provider keys under **API Keys**.
-4. Open `https://reklu.yourdomain.com/app/chat` and start chatting.
+3. Sign in to the admin dashboard at `https://all ai models .yourdomain.com/admin` and add your AI provider keys under **API Keys**.
+4. Open `https://all ai models .yourdomain.com/app/chat` and start chatting.
 
 ## Backups
 
@@ -158,11 +158,11 @@ Internet
 Traefik (HTTPS, auto-renewed Let's Encrypt cert)
   │
   ▼
-reklu-app  (Docker container, port 3000, this repo's image)
+all ai models -app  (Docker container, port 3000, this repo's image)
   │     │
   │     │ DATABASE_URL
   │     ▼
-  │   reklu-db  (Postgres 16, port 5432, persistent volume)
+  │   all ai models -db  (Postgres 16, port 5432, persistent volume)
   │
   └─ Health check: GET /api/health every 30s
 ```

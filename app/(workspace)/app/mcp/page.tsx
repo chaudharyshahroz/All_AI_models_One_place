@@ -67,7 +67,7 @@ export default async function MCPPage() {
           params: {
             protocolVersion: "2024-11-05",
             capabilities: {},
-            clientInfo: { name: "Reklu", version: "0.2.0" },
+            clientInfo: { name: "All Ai Models ", version: "0.2.0" },
           },
         }),
       });
@@ -115,7 +115,7 @@ export default async function MCPPage() {
         <div>
           <h1 className="display-lg text-2xl">MCP servers</h1>
           <p className="text-sm text-muted-foreground">
-            Connect Model Context Protocol servers to give Reklu access to your tools. Every tool
+            Connect Model Context Protocol servers to give All Ai Models  access to your tools. Every tool
             call is approved by you.
           </p>
         </div>
@@ -125,7 +125,7 @@ export default async function MCPPage() {
             <CardTitle className="text-base">Add a server</CardTitle>
             <CardDescription>
               HTTP and SSE transports. For local stdio servers, run the{" "}
-              <a href="/docs/mcp-bridge" className="text-primary underline-offset-4 hover:underline">Reklu bridge</a>.
+              <a href="/docs/mcp-bridge" className="text-primary underline-offset-4 hover:underline">All Ai Models  bridge</a>.
             </CardDescription>
           </CardHeader>
           <CardContent>

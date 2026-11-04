@@ -51,7 +51,7 @@ export default async function Home() {
         eyebrow="Unified chat"
         icon={MessageSquare}
         title={<>One chat.<br />Every model.</>}
-        body="Ask once. Reklu Auto reads the request, checks which models can actually handle it, and routes to the best fit — then tells you why it chose."
+        body="Ask once. All Ai Models  Auto reads the request, checks which models can actually handle it, and routes to the best fit — then tells you why it chose."
         bullets={[
           "Switch models mid-conversation without losing context",
           "Compare two to four models side by side",
@@ -65,7 +65,7 @@ export default async function Home() {
         eyebrow="Build"
         icon={Hammer}
         title={<>Describe an app.<br />Get a real one.</>}
-        body="Go from a sentence to a working website or mobile app. Reklu writes the code, renders a live preview as it goes, and lets you iterate by just saying what to change."
+        body="Go from a sentence to a working website or mobile app. All Ai Models  writes the code, renders a live preview as it goes, and lets you iterate by just saying what to change."
         bullets={[
           "Websites, landing pages, dashboards, and mobile screens",
           "Live preview updates as the code streams in",
@@ -80,7 +80,7 @@ export default async function Home() {
         eyebrow="Create"
         icon={Wand2}
         title={<>Documents, decks,<br />images, and data.</>}
-        body="Reklu produces real files, not just text in a chat window. Everything is editable in a side-by-side canvas and exports to the format you actually need."
+        body="All Ai Models  produces real files, not just text in a chat window. Everything is editable in a side-by-side canvas and exports to the format you actually need."
         bullets={[
           "Documents and reports → DOCX, PDF",
           "Presentations with real slide layouts → PPTX",
@@ -109,7 +109,7 @@ export default async function Home() {
         eyebrow="Connect"
         icon={Plug}
         title={<>MCP servers,<br />plugins, and your apps.</>}
-        body="Connect any Model Context Protocol server, plus native integrations for the tools you already use. Reklu reads your context — and asks before it writes anything."
+        body="Connect any Model Context Protocol server, plus native integrations for the tools you already use. All Ai Models  reads your context — and asks before it writes anything."
         bullets={[
           "Any MCP server over streamable HTTP or SSE",
           "Native connectors: Drive, Gmail, Slack, Notion, GitHub, Linear",
@@ -260,7 +260,7 @@ function Capabilities() {
             Four surfaces, one subscription
           </h2>
           <p className="mt-4 text-[17px] text-muted-foreground">
-            Most teams pay for four tools to do this. Reklu puts them behind one login and one
+            Most teams pay for four tools to do this. All Ai Models  puts them behind one login and one
             bill.
           </p>
         </ScrollReveal>
@@ -289,7 +289,7 @@ function Testimonials() {
       metric: "62%",
       metricLabel: "less time per task",
       quote:
-        "We stopped paying for three separate AI subscriptions. Reklu routes to whatever's best and we finally see what each answer actually costs.",
+        "We stopped paying for three separate AI subscriptions. All Ai Models  routes to whatever's best and we finally see what each answer actually costs.",
       name: "Marcus A.",
       role: "Head of Engineering",
     },
@@ -367,19 +367,19 @@ function Pricing() {
 function FAQ() {
   const items = [
     {
-      q: "What can Reklu actually build?",
-      a: "Websites, landing pages, dashboards, and mobile app screens. You describe what you want, Reklu writes the code and renders a live preview you can iterate on by conversation. Export the source or download a ready-to-host file.",
+      q: "What can All Ai Models  actually build?",
+      a: "Websites, landing pages, dashboards, and mobile app screens. You describe what you want, All Ai Models  writes the code and renders a live preview you can iterate on by conversation. Export the source or download a ready-to-host file.",
     },
     {
-      q: "How does Reklu connect to AI providers?",
+      q: "How does All Ai Models  connect to AI providers?",
       a: "Direct official APIs from OpenAI, Anthropic, Google, and others. We never route through resellers or mark up list price — what you see is what the provider charges.",
     },
     {
       q: "Can I bring my own API key?",
-      a: "Yes. Add your own key in Settings → Providers and Reklu will use it. Keys are encrypted at rest with AES-256-GCM and never exposed to your browser.",
+      a: "Yes. Add your own key in Settings → Providers and All Ai Models  will use it. Keys are encrypted at rest with AES-256-GCM and never exposed to your browser.",
     },
     {
-      q: "How does Reklu Auto decide which model to use?",
+      q: "How does All Ai Models  Auto decide which model to use?",
       a: "It looks at your message, the capabilities required (vision, tools, reasoning, context length), and your quality/speed/cost preference — then picks the best available model and shows you why.",
     },
     {

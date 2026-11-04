@@ -9,7 +9,7 @@ import type { ModelDescriptor, UnifiedGenerationRequest, UnifiedMessage, Provide
 /**
  * The chat orchestrator — the single place that turns a "user said X" event
  * into a streaming response. It:
- *   - resolves the model (manual or Reklu Auto)
+ *   - resolves the model (manual or All Ai Models  Auto)
  *   - builds the request (with system + history)
  *   - resolves the provider credential
  *   - persists messages before/after
@@ -29,7 +29,7 @@ export interface ChatContext {
   attachments?: Array<{ type: "image"; url: string; mimeType: string }>;
   // Model selection
   modelId?: string;        // explicit model
-  auto?: boolean;          // use Reklu Auto
+  auto?: boolean;          // use All Ai Models  Auto
   preference?: UserPreference; // quality | balanced | speed | cost
   // Sampling
   temperature?: number;
@@ -242,7 +242,7 @@ export async function orchestrate(ctx: ChatContext): Promise<OrchestratorResult>
 
 function defaultSystem(): string {
   return [
-    "You are Reklu, a thoughtful AI assistant in a multi-model workspace.",
+    "You are All Ai Models , a thoughtful AI assistant in a multi-model workspace.",
     "Be direct, useful, and honest. Use Markdown when it helps (lists, tables, code blocks).",
     "If you don't know something, say so. If you need clarification, ask.",
     "Never reveal hidden chain-of-thought. High-level reasoning summaries are fine when useful.",

@@ -37,7 +37,7 @@ export default async function SignInPage({
             href="/"
             className="mt-8 inline-block text-sm text-muted-foreground hover:text-foreground"
           >
-            ← Back to reklu.app
+            ← Back to all ai models .app
           </Link>
           <h1 className="mt-4 display-lg text-3xl">Welcome back</h1>
           <p className="mt-2 text-sm text-muted-foreground">
@@ -76,7 +76,7 @@ export default async function SignInPage({
             <Button type="submit" className="w-full">Sign in</Button>
           </form>
           <p className="mt-8 text-sm text-muted-foreground">
-            New to Reklu?{" "}
+            New to All Ai Models ?{" "}
             <Link href="/sign-up" className="text-foreground hover:underline">
               Create an account
             </Link>
@@ -96,7 +96,7 @@ export default async function SignInPage({
           <CardContent className="space-y-2 text-sm">
             <div>
               <span className="text-muted-foreground">Email:</span>{" "}
-              <code className="rounded bg-muted px-1.5 py-0.5 font-mono">demo@reklu.app</code>
+              <code className="rounded bg-muted px-1.5 py-0.5 font-mono">demo@all ai models .app</code>
             </div>
             <div>
               <span className="text-muted-foreground">Password:</span>{" "}

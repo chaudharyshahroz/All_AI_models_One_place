@@ -26,7 +26,7 @@ describe("pricing", () => {
   });
 
   it("returns zeros for unknown providers", () => {
-    const p = priceFor("reklus", "anything");
+    const p = priceFor("all ai models s", "anything");
     expect(p.input).toBe(0);
   });
 

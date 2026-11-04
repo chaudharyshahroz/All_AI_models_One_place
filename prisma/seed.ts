@@ -261,7 +261,7 @@ async function main() {
   console.log(`  ✓ Seeded ${OPENAI_COMPAT_PROVIDERS.length} OpenAI-compatible providers`);
 
   console.log("→ Seeding demo user…");
-  const email = "demo@reklu.app";
+  const email = "demo@all ai models .app";
   const password = "demopassword";
   const passwordHash = await bcrypt.hash(password, 10);
   let demo = await db.user.findUnique({ where: { email }, include: { memberships: true } });
@@ -349,14 +349,14 @@ async function main() {
 
   console.log("→ Seeding sample conversation…");
   const existing = await db.conversation.findFirst({
-    where: { userId: demo.id, title: "Welcome to Reklu" },
+    where: { userId: demo.id, title: "Welcome to All Ai Models " },
   });
   if (!existing) {
     const conv = await db.conversation.create({
       data: {
         organizationId: orgId,
         userId: demo.id,
-        title: "Welcome to Reklu",
+        title: "Welcome to All Ai Models ",
         defaultModelId: "claude-sonnet-4-5",
       },
     });
@@ -374,8 +374,8 @@ async function main() {
         role: "assistant",
         ordinal: 1,
         content:
-          "Welcome to Reklu. You can chat with leading AI models, switch models mid-conversation, " +
-          "let Reklu Auto pick the best model for your request, upload files, and create documents, " +
+          "Welcome to All Ai Models . You can chat with leading AI models, switch models mid-conversation, " +
+          "let All Ai Models  Auto pick the best model for your request, upload files, and create documents, " +
           "presentations, images, and more. Try asking me to write something, summarize a document, " +
           "or debug some code.",
         modelProviderId: "anthropic",

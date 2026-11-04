@@ -44,7 +44,7 @@ export function listAdapterIds(): string[] {
 
 /**
  * Try to obtain a credential for a provider from the configured sources.
- * Order: system env key (Reklu-managed) → null (caller should ask user for BYOK).
+ * Order: system env key (All Ai Models -managed) → null (caller should ask user for BYOK).
  *
  * If the provider is not configured, returns null. The caller is responsible
  * for surfacing a clear "provider not configured" error to the user.

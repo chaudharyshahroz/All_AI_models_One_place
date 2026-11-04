@@ -1,6 +1,6 @@
 # Google OAuth setup
 
-Reklu uses NextAuth v5. Google sign-in is automatically enabled when both `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET` are set.
+All Ai Models  uses NextAuth v5. Google sign-in is automatically enabled when both `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET` are set.
 
 ## One-time Google Cloud setup
 
@@ -45,9 +45,9 @@ Restart the app. The "Continue with Google" button will appear on `/sign-in` and
 
 The first time a user signs in with Google, they'll see Google's OAuth consent screen asking permission to share their email and profile. Configure the consent screen in Google Cloud under **APIs & Services → OAuth consent screen**:
 
-- App name: **Reklu**
+- App name: **All Ai Models **
 - User support email: your support address
-- App logo: optional, your Reklu logo
+- App logo: optional, your All Ai Models  logo
 - Authorized domains: `your-production-domain.com`
 - Scopes: `email`, `profile`, `openid` (default for NextAuth)
 

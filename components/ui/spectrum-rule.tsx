@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 
 /**
- * Reklu's signature mark — a thin gradient line cycling through provider
+ * All Ai Models 's signature mark — a thin gradient line cycling through provider
  * hues. Use once per view (a wordmark underline, an active-tab indicator, a
  * composer's streaming edge). Never tile it as decoration.
  */

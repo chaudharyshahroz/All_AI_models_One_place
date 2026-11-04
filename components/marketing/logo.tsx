@@ -2,7 +2,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { SpectrumRule } from "@/components/ui/spectrum-rule";
 
-/** The Reklu mark — converging strokes, echoing "many models, one answer". */
+/** The All Ai Models  mark — converging strokes, echoing "many models, one answer". */
 export function Logo({ className }: { className?: string }) {
   return (
     <span
@@ -30,7 +30,7 @@ export function Wordmark({ href = "/", ruleWidth = "w-9" }: { href?: string; rul
     <Link href={href} className="group flex w-fit flex-col gap-2">
       <span className="flex items-center gap-2.5">
         <Logo />
-        <span className="font-display text-[17px] font-semibold tracking-tight">Reklu</span>
+        <span className="font-display text-[17px] font-semibold tracking-tight">All Ai Models </span>
       </span>
       <SpectrumRule className={`${ruleWidth} transition-[width] duration-300 group-hover:w-16`} />
     </Link>

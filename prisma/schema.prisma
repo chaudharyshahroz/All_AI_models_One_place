@@ -1,5 +1,5 @@
 // ============================================================================
-// Reklu Prisma Schema
+// All Ai Models  Prisma Schema
 // ----------------------------------------------------------------------------
 // Phase 1-3 models. Phase 4+ (skills, MCP, connectors, artifacts, agents,
 // billing) are added in subsequent migration files; see docs/ARCHITECTURE.md.
@@ -353,7 +353,7 @@ model ModelDefinition {
   releaseDate       DateTime?
   // Admin
   isEnabledForUsers Boolean  @default(true)
-  // Quality hints for Reklu Auto (1-100)
+  // Quality hints for All Ai Models  Auto (1-100)
   qualityScore      Int      @default(50)
   speedScore        Int      @default(50)
   costScore         Int      @default(50)

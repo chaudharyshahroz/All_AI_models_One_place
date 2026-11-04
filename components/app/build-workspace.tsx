@@ -207,7 +207,7 @@ export function BuildWorkspace({
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    const name = `reklu-build-${Date.now()}.html`;
+    const name = `all ai models -build-${Date.now()}.html`;
     a.download = name;
     a.click();
     URL.revokeObjectURL(url);
@@ -271,7 +271,7 @@ export function BuildWorkspace({
               </div>
               <h2 className="font-display text-xl font-semibold">What do you want to build?</h2>
               <p className="mt-2 text-sm text-muted-foreground">
-                Describe a website, landing page, or app screen. Reklu generates a complete,
+                Describe a website, landing page, or app screen. All Ai Models  generates a complete,
                 self-contained HTML file you can preview, iterate on, and export.
               </p>
               <div className="mt-6 space-y-1.5 text-left">

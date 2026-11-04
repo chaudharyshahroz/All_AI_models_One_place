@@ -1,6 +1,6 @@
 import { FileText, Presentation, ImageIcon, Table2, Code2, Download } from "lucide-react";
 
-/** Each slide is a miniature of the artifact type Reklu produces. */
+/** Each slide is a miniature of the artifact type All Ai Models  produces. */
 const SLIDES = [
   {
     icon: FileText,
@@ -109,7 +109,7 @@ const SLIDES = [
   },
 ];
 
-/** Cycles through the artifact types Reklu can produce from a chat. */
+/** Cycles through the artifact types All Ai Models  can produce from a chat. */
 export function CreateDemo() {
   return (
     <div className="relative h-[268px]">

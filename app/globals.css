@@ -284,7 +284,7 @@
     mask-image: radial-gradient(ellipse 60% 60% at 50% 0%, black 30%, transparent 80%);
   }
 
-  /* The spectrum rule — Reklu's signature mark. A thin gradient line cycling
+  /* The spectrum rule — All Ai Models 's signature mark. A thin gradient line cycling
      through provider hues. Use once per view: under a wordmark, as an active-
      tab indicator, or as the composer's streaming edge. Never tile it. */
   .spectrum-rule {

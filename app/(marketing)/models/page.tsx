@@ -31,7 +31,7 @@ export default async function ModelsPage() {
         </h1>
         <SpectrumRule className="mt-6 w-16" />
         <p className="mt-6 max-w-2xl text-muted-foreground">
-          Reklu uses direct official APIs. The prices below are the providers' list prices; you can
+          All Ai Models  uses direct official APIs. The prices below are the providers' list prices; you can
           also bring your own key. Admin-controlled — only enabled models are shown to users.
         </p>
         <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

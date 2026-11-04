@@ -28,13 +28,13 @@ const jetbrains = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Reklu — Every leading AI model. One connected workspace.",
-    template: "%s · Reklu",
+    default: "All Ai Models  — Every leading AI model. One connected workspace.",
+    template: "%s · All Ai Models ",
   },
   description:
     "Chat with GPT, Claude, Gemini, Grok, and other leading models. Connect your apps and data, use specialized AI skills, and create documents, presentations, images, spreadsheets, code, and more.",
-  applicationName: "Reklu",
-  authors: [{ name: "Reklu" }],
+  applicationName: "All Ai Models ",
+  authors: [{ name: "All Ai Models " }],
   keywords: [
     "AI",
     "ChatGPT",
@@ -50,14 +50,14 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     type: "website",
-    title: "Reklu — Every leading AI model. One connected workspace.",
+    title: "All Ai Models  — Every leading AI model. One connected workspace.",
     description:
       "Chat with leading AI models, connect your apps, and create documents, presentations, images, and more.",
-    siteName: "Reklu",
+    siteName: "All Ai Models ",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Reklu — Every leading AI model. One connected workspace.",
+    title: "All Ai Models  — Every leading AI model. One connected workspace.",
   },
 };
 
@@ -72,17 +72,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: `
               (function() {
                 try {
-                  var t = localStorage.getItem('reklu-theme');
+                  var t = localStorage.getItem('all ai models -theme');
                   if (!t) t = 'system';
                   var d = t === 'system' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : t;
                   document.documentElement.classList.add(d);
                   document.documentElement.style.colorScheme = d;
                 } catch (e) {}
                 try {
-                  if (localStorage.getItem('reklu-panel-collapsed') === '1') {
+                  if (localStorage.getItem('all ai models -panel-collapsed') === '1') {
                     document.documentElement.classList.add('panel-collapsed');
                   }
-                  if (localStorage.getItem('reklu-admin-sidebar-collapsed') === '1') {
+                  if (localStorage.getItem('all ai models -admin-sidebar-collapsed') === '1') {
                     document.documentElement.classList.add('admin-sidebar-collapsed');
                   }
                 } catch (e) {}

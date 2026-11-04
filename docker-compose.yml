@@ -1,7 +1,7 @@
 version: "3.9"
 
 # ============================================================================
-# Reklu — Local + Dokploy docker-compose
+# All Ai Models  — Local + Dokploy docker-compose
 # ----------------------------------------------------------------------------
 # For Dokploy, set the env vars in the Dokploy UI (not here) so secrets
 # don't end up in git. For local dev, copy .env.example to .env first.
@@ -12,7 +12,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: reklu-app
+    container_name: all ai models -app
     restart: unless-stopped
     ports:
       - "3000:3000"
@@ -21,7 +21,7 @@ services:
       HOSTNAME: "0.0.0.0"
       PORT: "3000"
       # Database
-      DATABASE_URL: ${DATABASE_URL:-postgresql://reklu:reklu@db:5432/reklu}
+      DATABASE_URL: ${DATABASE_URL:-postgresql://all ai models :all ai models @db:5432/all ai models }
       # Auth
       AUTH_SECRET: ${AUTH_SECRET:?AUTH_SECRET is required}
       AUTH_TRUST_HOST: "true"
@@ -46,32 +46,32 @@ services:
       retries: 3
       start_period: 30s
     networks:
-      - reklu
+      - all ai models 
 
   db:
     image: postgres:16-alpine
-    container_name: reklu-db
+    container_name: all ai models -db
     restart: unless-stopped
     environment:
-      POSTGRES_USER: ${POSTGRES_USER:-reklu}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-reklu}
-      POSTGRES_DB: ${POSTGRES_DB:-reklu}
+      POSTGRES_USER: ${POSTGRES_USER:-all ai models }
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-all ai models }
+      POSTGRES_DB: ${POSTGRES_DB:-all ai models }
     volumes:
-      - reklu-db-data:/var/lib/postgresql/data
+      - all ai models -db-data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-reklu}"]
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-all ai models }"]
       interval: 10s
       timeout: 5s
       retries: 5
     networks:
-      - reklu
+      - all ai models 
 
 networks:
-  reklu:
+  all ai models :
     driver: bridge
 
 volumes:
-  reklu-db-data:
+  all ai models -db-data:
     driver: local
