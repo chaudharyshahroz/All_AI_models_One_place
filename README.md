@@ -1,8 +1,8 @@
-# Reklu
+# All AI Models at One Place
 
 > **Every leading AI model. One connected workspace.**
 
-Reklu is a chat-first AI workspace. Chat with GPT, Claude, Gemini, and other leading models. Connect your apps and data, use specialized AI skills, and create documents, presentations, images, spreadsheets, and code — all from one intelligent chat interface.
+All Ai Model is a chat-first AI workspace. Chat with GPT, Claude, Gemini, and other leading models. Connect your apps and data, use specialized AI skills, and create documents, presentations, images, spreadsheets, and code — all from one intelligent chat interface.
 
 This repository contains the **Phase 1-3 build** of Reklu:
 
